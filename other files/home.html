@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>6-Home</title>
+    <link rel="stylesheet" href="../styles/home.css">
+</head>
+
+<body>
+    <div class="intro">
+        D-POST <br> By 6NETWORK
+    </div>
+
+
+
+    <button class="postbtn" id="createPost" onclick="openPostDiv()">
+        Create Post
+    </button>
+
+    <div id="popUp">
+        <div class="postdiv" id="postdiv">
+            <div class="">
+                <div class="add-Post">Add Post</div>
+                <form onsubmit="uploadPostBtn()">
+                    <textarea class="txtAreaForPost" required="required" id="userPostTxtId" cols="55" rows="6"
+                        placeholder="Please Write Your 6Post"></textarea>
+                    <br>
+                    <button class="uploadPostBtn" type="reset" onclick="exetUploadPostBtn()">
+                        Cancle
+                    </button>
+
+                    <button class="uploadPostBtn" type="submit">
+                        Upload Post
+                    </button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <div id="postApperHere" class="postApperHere">
+
+        <div class="UserPostCss" id="UserPostCss">
+            <div class="flx">
+                <div class="dp"> <img class="postdp" src="../imgs/avatar3.png" alt=""> </div>
+                <div class="date">
+                    <div id="time">Joker</div>
+                    <div>12/may/2002</div>
+                </div>
+            </div>
+
+            <div class="usernamediv" id="usernamediv">In This Platform You Just Upload Post Related To 6Network &
+                Hacking As You Know 6Network Is A Platform That Provide Elements Related To It Join Our 6Network & Learn
+                A Lots Of Things
+            </div>
+        </div>
+
+    </div>
+    
+    <p class="footer">
+        © 2019–2024 Powered By Silent Joker. <br>
+        All rights reserved
+    </p>
+
+    <script src="../js/scroptForPostPage.js"></script>
+</body>
+
+</html>

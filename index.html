@@ -1,0 +1,44 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles/login-signup.css">
+</head>
+
+<body>
+    <div class="intro">
+        D-POST <br> By 6NETWORK
+    </div>
+    <div class="main">
+        <div class="login">
+            <p>login</p>
+            <form onsubmit="openprofile()">
+                <input type="text" id="checkEmail" required="required" placeholder="Enter Your Email">
+                <input type="text" id="checkPassword" required="required" placeholder="Enter Your Password">
+                <button type="submit" class="loginbttn">Login</button>
+            </form>
+        </div>
+        <div class="signup">
+            <p>sign Up</p>
+            <form onsubmit="saveUser()">
+                <input type="text" required="required" id="name" placeholder="Enter Your Name">
+                <input type="email" required="required" id="Enter-Email" placeholder="Enter Your Email">
+                <input type="text" required="required" id="Enter-Password" placeholder="Enter Your Password">
+                <input type="text" required="required" id="Confirm-Password" placeholder="Confirm Password">
+                <p class="ntkfooter" id="accounterror"></p>
+                <button class="loginbttn">Sign Up</button>
+            </form>
+
+        </div>
+    </div>
+    <p class="footer">
+        © 2019–2024 Powered By Silent Joker. <br>
+        All rights reserved
+    </p>
+    <script src="js/script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,185 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    background-color: rgb(1, 1, 32);
+    color: white;
+    text-transform: capitalize;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.intro{
+    height: 100vh;
+    font-size: 100px;
+    font-family: 'Courier New', Courier, monospace;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    border-bottom: solid white;
+}
+
+
+.postbtn {
+    font-size: 18px;
+    background-color: white;
+    border: solid white 1px;
+    float: right;
+    margin-right: 30px;
+    padding: 5px;
+    border-radius: 6px;
+    margin-top: 20px;
+}
+
+#popUp {
+    position: fixed;
+    background-color: rgb(0, 0, 0, 0.7);
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    top: 0px;
+    z-index: 1;
+    display: none;
+}
+.postdiv{
+    display: none;
+    width: 80%;
+    background-color: rgb(1, 1, 32);
+    color: white;
+    margin: 0px auto;
+    position: relative;
+    top: 60px;
+    padding: 15px;
+    text-align: center;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin: 0px auto;
+    z-index: 1;
+}
+.add-Post {
+    text-align: start;
+    margin: 10px 10px;
+    font-size: 1.8em;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.txtAreaForPost {
+    text-align: left;
+    font-size: 1.4em;
+    color: white;
+    padding: 10px;
+    background-color: transparent;
+    border: solid white 1px;
+    width: 80%;
+}
+
+
+.uploadPostBtn {
+    font-size: 18px;
+    background-color: rgb(0, 85, 243);
+    color: white;
+    padding: 8px;
+    border-radius: 6px;
+    border: solid rgb(0, 85, 243) 1px;
+    margin-top: 20px;
+}
+.UserPostCss {
+    background-color: white;
+    width: 95%;
+    color: black;
+    font-weight: bold;
+    margin: 20px auto;
+    padding: 10px;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+.flx {
+    display: flex;
+    border-bottom: solid rgb(194, 193, 193) 1px;
+    padding: 2px;
+}
+.postdp{
+    height: 50px;
+    width: 50px;
+    border-radius: 50px;
+}
+.date{
+    margin-top: 5px;
+    margin-left: 10px;
+}
+
+
+.usernamediv{
+    font-size: 16px;   
+    margin-top: 10px;
+    font-weight: 50;
+    margin-left: 50px;
+    width: 80%;
+    text-align: justify;
+}
+#time{
+    font-size: 20px;
+    font-weight: bold;
+    text-transform: capitalize;
+}
+
+.postApperHere {
+    display: flex;
+    width: 80%;
+    color: black;
+    margin: 0px auto;
+    position: relative;
+    top: 60px;
+    flex-direction: column-reverse;
+
+}
+.footer{
+    font-size: 16px;
+    margin-top: 80px;
+    text-align: center;
+}
+@media screen and (max-width:700px) {
+    .intro{
+        font-size: 80px;
+    }
+       .usernamediv{
+        margin: 10px auto;
+       }
+}
+
+@media screen and (max-width:600px) {
+    .intro{
+        font-size: 70px;
+    }
+}
+
+
+@media screen and (max-width:500px){
+    .intro{
+        font-size: 55px;
+    }
+}
+
+@media screen and (max-width: 400px){
+    .intro{
+        font-size: 45px;
+    }
+    .UserPostCss{
+        font-size: 14px;
+    }
+    #time{
+        font-size: 16px;
+    }
+    .footer{
+        font-size: 14px;
+    }
+
+}
+
+@media screen and (max-width: 340px){
+    .intro{
+        font-size: 40px;
+    }
+    .usernamediv{
+        text-align: start;
+    }
+}
